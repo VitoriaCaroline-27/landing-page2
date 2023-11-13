@@ -1,0 +1,105 @@
+body{
+    background-color:rgb(34,34,34); /*mudar cor de fundode toda a lading page*/
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;/*mantendo as informações paradas na página*/
+    margin: 0 auto;/*para ficar no meio da página*/
+    padding: 15px;/*cria margens em volta = dar espaçamento interno para o conteúdo do body ficar afunilado*/
+   
+}
+header{
+    display: flex;/* método de estilização*/
+    flex-direction: row;/*fluxo de linha ou seja vai ficar tipo uma linha não em coluna*/
+    justify-content: space-between; /*criar um espaço entre as informações*/
+    align-items: center; /*deixar na mesma reta (uniforme)*/
+
+}
+
+#titlle{
+    flex-direction: column;/*deixar em uma coluna fixa*/
+    line-height: 10px;/*deixar o título juntinho*/
+    
+}
+
+li{
+    display: inline-block; /*todos os elementos na linha*/
+    margin:20px; /*serve para dar uma separada nos elementos dessa li*/
+}
+
+a{
+    color: white; /*muda a cor das palavras do menu*/
+}
+
+a:hover{
+    color: rgb(132,14,201); /*hover é para dar o efeito quando o mouse passa em cima das palavras e o color nesse caso é para mudar as cores das palavras quando o mouse é passado por cima fica roxo*/
+    transition: 0.3s all;/*transition serve para colocar tempo ao passar do mouse no efeito/e o all serve para aplicar em tudo no caso no (a)*/
+
+}
+
+#Inscreva-se-btn{
+    border: 2px solid rgb(132,14,201);/*2px é a espessura da borda/ solide= borda sólida sem desenho sem nada/color=cor da linha da borda*/
+    padding: 10px;/*criando uma "subborda" criando uma margem interna*/
+    border-radius: 15px;/*para dar uma arredondada nas bordas*/
+
+}
+#Inscreva-se-btn:hover{
+    background-color: rgb(132,14,201);/*para deixar o fundo violeta e as palavras brancas (cria-se um efeito)+*/
+    color:white;
+}
+h1{
+    font-weight: 200;/*deixar a fonte mais fina*/
+
+}
+
+main{
+    display:flex;
+    flex-direction: row;/*serve para colocar um do lado do outro*/
+    margin-top: 50px; /*cria uma margem pra cima que empurra para baixo as informações*/
+
+}
+
+h2{
+    font-size: 56px;/*serve para aumentar a fonte*/
+    line-height:10px; /*aproxima as informações (o que ta escrito no h2)*/
+    font-family: poopinsmedium;
+}
+
+span{
+    color: rgb(132, 13, 201);/*muda a cor da fonte onde no html está o span*/
+}
+
+p{
+    line-height:20px; /* muda o espaçamento*/
+    max-width: 500px; /*largura máxima do parágrafo*/
+    font-family: poopsligth;
+
+}
+
+img{
+    width: 620px; /*aumentar a imagem*/
+} 
+
+form{
+    display:flex;
+    flex-direction:column;/*para o formulário virar uma coluna*/
+    width: 70%;/*largura*/
+
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132,14,201);
+    color:white;
+    font-weight:bold;/*cor da font*/
+}
+
+input{
+    margin-top: 20px;/*dar um espaçamento nos elementos do forms individualmente*/
+    height: 20px; /*serve para o input ficar um pouco mais laarguinho de expessura*/
+    padding:15px;
+    border-radius:20px;/*serve para deixar a borda do forms redonda*/
+    border:none;
+    font-size:15px;/*para a letra do forms ficar um pouco maiorzinha*/
+
+}
